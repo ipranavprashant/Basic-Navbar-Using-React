@@ -1,0 +1,96 @@
+/* body {
+  margin: 0;
+} */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(44, 28, 58);
+  /* background: linear-gradient(180deg, #2E316F 0%, #232449 50.52%, #3F153B 88.54%); */
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clubName {
+  display: flex;
+  padding-right: 55%;
+}
+
+#Navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#Navbar li a,
+.clubName {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+#Navbar li a:hover,
+#Navbar li a.active {
+  color: blueviolet;
+}
+
+#Navbar li a:hover::after,
+#Navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: violet;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#Mobile {
+  display: none;
+}
+
+#Mobile i {
+  color: #fff;
+}
+
+@media screen and (max-width: 769px) {
+  #Navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 73px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: rgb(19, 2, 36);
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+
+  #Navbar.active {
+    right: 0px;
+  }
+
+  #Mobile {
+    display: block;
+  }
+}
+
+#Navbar li {
+  margin-bottom: 25px;
+}
+
+#Mobile i {
+  font-size: 24px;
+  cursor: pointer;
+}
