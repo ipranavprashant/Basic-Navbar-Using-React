@@ -7,7 +7,7 @@ nav {
   justify-content: space-between;
   background: rgb(44, 28, 58);
   /* background: linear-gradient(180deg, #2E316F 0%, #232449 50.52%, #3F153B 88.54%); */
-  padding: 20px 80px;
+  padding: 20px 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
@@ -16,6 +16,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .clubName {
   display: flex;
   padding-right: 55%;
@@ -58,16 +59,17 @@ nav {
 
 #Mobile i {
   color: #fff;
+  align-items: center;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1000px) {
   #Navbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 73px;
+    top: 148px;
     right: -300px;
     width: 300px;
     height: 100vh;
@@ -84,13 +86,17 @@ nav {
   #Mobile {
     display: block;
   }
-}
 
-#Navbar li {
-  margin-bottom: 25px;
-}
+  #Navbar li {
+    margin-bottom: 25px;
+  }
 
-#Mobile i {
-  font-size: 24px;
-  cursor: pointer;
+  #Mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
+/* .logo {
+  height: 2%;
+  width: 20rem;
+} */
